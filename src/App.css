@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: moveUp 2s ease-out forwards;
+  padding-bottom: 30px;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+  animation: floatUp 3s ease-out forwards;
+  padding-bottom: 30px;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.temperature {
+  margin: 2rem 0;
+  animation: floatUp 2.5s ease-out forwards;
+}
+
+.temperature h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+.temperature h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.weather-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  animation: floatUp 3s ease-out forwards;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 1rem;
+  min-width: 150px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.card p {
+  font-size: 1rem;
+  color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0; /* Keep footer at the bottom of the viewport */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white; /* Use white font for better contrast */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2); /* Optional: Add slight opacity to distinguish from the background */
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

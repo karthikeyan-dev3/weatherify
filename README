@@ -1,0 +1,19 @@
+# Weatherify
+
+Weatherify is a simple weather application that fetches real-time weather data from the OpenWeatherMap API. It displays key information such as temperature, rainfall, humidity, wind speed, and more for a given city.
+
+## Features
+
+- Search for any city worldwide.
+- Get real-time weather information.
+- Responsive design for both desktop and mobile users.
+- Data fetched from OpenWeatherMap API.
+
+## Installation
+
+To get started, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/karthikeyan-dev3/weatherify.git
+cd weatherify
+npm install
